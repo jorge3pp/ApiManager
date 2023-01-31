@@ -1,19 +1,16 @@
 # ApiManager
 
-El ApiManager contiene toda la lógica de la capa de API de la aplicación.
+This ApiManager is a library intended to structure the Network layer of an application.
 
-Capas del paquete:
+Contains:
 - Client
-    Contiene la configuración del APIClient y los protocolos de RefreshToken y SecureDatabase
-    
-- Extensions
-    Extensiones generales de la capa API
-    
-- Helpers
-    Contiene los StaticMethods necesarios para el API
+    Protocol that performs the network's request. Also contains two concretions of that protocol as to serve as examples.
 
+- Extensions/Helpers
+    Minor functionality aimed to make the code cleaner and extend default behaviours.
+ 
 - Interfaces
-    Contiene las Interfaces de comunicación de Body, Headers y los distintos posibles Methods que pueden ser usados en la capa.
-
+    Data models that are a representation of the components needed to make a Network Request.
+    
 - Requests
-    Contiene el protocolo que deben implementar las Requests de la app que dependa de este paquete
+    Protocol that should be implemented by every Network Request.
